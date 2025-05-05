@@ -24,7 +24,7 @@ export default function Blogs() {
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
-        fetch("/blogs.json")
+        fetch("/portfolio/blogs.json")
           .then(result => {
             if (result.ok) {
               return result.json();
